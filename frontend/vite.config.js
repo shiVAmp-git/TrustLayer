@@ -8,4 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+
+  base: '/', // This ensures assets are loaded from the root
 })
