@@ -3,7 +3,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./consent_platform.db")
+SQLALCHEMY_DATABASE_URL = os.getenv(
+    "DATABASE_URL", 
+    "postgresql://postgres:Trust_Layer11@db.wnehqnwuwzcqwyyywmyb.supabase.co:5432/postgres"
+)
 
 # Fix for PostgreSQL URL if using older Neon/Supabase/Heroku formats (postgres:// vs postgresql://)
 if SQLALCHEMY_DATABASE_URL.startswith("postgres://"):
