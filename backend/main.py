@@ -2,8 +2,8 @@ from fastapi import FastAPI, Depends, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List
-import models, schemas, database, guardian
-from database import engine, get_db
+from . import models, schemas, database, guardian
+from .database import engine, get_db
 import datetime
 
 models.Base.metadata.create_all(bind=engine)

@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-import models
+from . import models
 import datetime
 
 def run_guardian_cycle(db: Session):
