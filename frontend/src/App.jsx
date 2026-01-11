@@ -122,7 +122,7 @@ function App() {
         )}
 
         <footer className="mt-20 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
-          &copy; 2026 GuardianLayer Autonomous Consent Platform. Secure. Transparent. Agentic.
+          &copy; 2026 TrustLayer Autonomous Consent Platform. Secure. Transparent. Agentic.
         </footer>
       </div>
     </div>
