@@ -6,8 +6,7 @@ import OrganizationList from './components/OrganizationList';
 import AccessLogViewer from './components/AccessLogViewer';
 import ConsentModal from './components/ConsentModal';
 
-const API_BASE = import.meta.env.VITE_API_BASE || (window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/api');
-
+const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/api';
 function App() {
   const [organizations, setOrganizations] = useState([]);
   const [consents, setConsents] = useState([]);
